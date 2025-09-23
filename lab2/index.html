@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      td {
+        min-width: 6rem;
+        height: 2rem;
+      }
+
+      tr:first-child {
+        background-color: #618f8f;
+      }
+      tr:first-child:hover {
+        background-color: #f5f561;
+      }
+
+      tr:nth-child(2) {
+        background-color: #f5f561;
+      }
+      tr:nth-child(2):hover {
+        background-color: #618f8f;
+      }
+    
+  </style>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <td rowspan="2" colspan="2">Бондарчук</td>
+            <td>Артем</td>
+            <td rowspan="2">Віталійович</td>
+            <td rowspan="2"></td>
+        </tr>
+        
+        <tr>
+            <td>ІМ-33, Лр-2, Варіант 61</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2" colspan="2"></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="container">
+        
+    </div>
 </body>
 </html>
