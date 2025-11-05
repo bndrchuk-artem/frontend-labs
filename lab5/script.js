@@ -42,7 +42,7 @@ function validateForm() {
     }
 }
 
-const variant = 1; // номер варіанту
+const variant = 25; // номер варіанту
 const table = document.getElementById("table");
 const colorPicker = document.getElementById("input-color");
 
