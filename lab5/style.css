@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input {
+    padding: 6px;
+    width: 250px;
+}
+.error {
+    border: 2px solid red;
+    background-color: #ffe0e0;
+}
+button {
+    margin-top: 15px;
+    max-width: 100px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.container-task1 {
+    display: flex;
+    gap: 3rem;
+    width: 1000%;
+    max-width: 1000px;
+    margin-bottom: 2rem;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.output {
+    width: 20rem;
+    padding: 1rem;
+    border: 1px dashed #0056b3;
+    border-radius: 5px;
+}

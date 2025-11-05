@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Бондарчук Артем Віталійович ІМ-33 ЛР-5 Варіант 61</title>
+</head>
+<body>
+    <div class="container-task1">
+        <form id="myForm">
+            <label for="full-name">ПІБ:</label>
+            <input type="text" id="full-name" placeholder="ТТТТТТ Т.Т.">
+
+            <label for="variant">Варіант:</label>
+            <input type="text" id="variant" placeholder="ЧЧ" maxlength="2">
+
+            <label for="group">Група:</label>
+            <input type="text" id="group" placeholder="ТТ-ЧЧ" maxlength="5">
+
+            <label for="phone">Телефон:</label>
+            <input type="text" id="phone" placeholder="+ЧЧЧЧЧЧЧЧЧЧ" maxlength="13">
+
+            <label for="idcard">ID-card:</label>
+            <input type="text" id="idcard" placeholder="ТТ №ЧЧЧЧЧЧ" maxlength="10">
+
+            <button type="button" onclick="validateForm()">Перевірити</button>
+        </form>
+        <div class="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
