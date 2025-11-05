@@ -41,3 +41,44 @@ function validateForm() {
         `;
     }
 }
+
+const variant = 1; // номер варіанту
+const table = document.getElementById("table");
+const colorPicker = document.getElementById("input-color");
+
+let count = 1;
+for (let i = 0; i < 6; i++) {
+    const row = document.createElement("tr");
+    for (let j = 0; j < 6; j++) {
+    const cell = document.createElement("td");
+    cell.textContent = count;
+
+    if (count === variant) {        
+        cell.addEventListener("mouseenter", () => {
+        const randomBackgroundColor = `rgb(${rand(255)}, ${rand(255)}, ${rand(255)})`;
+        cell.style.backgroundColor = randomBackgroundColor;
+        const randomTextColor = `rgb(${rand(255)}, ${rand(255)}, ${rand(255)})`;
+        cell.style.color = randomTextColor;
+        });
+
+        cell.addEventListener("click", () => {
+        cell.style.backgroundColor = colorPicker.value;
+        });
+
+        cell.addEventListener("dblclick", () => {
+        const rowCells = row.children;
+        for (let c of rowCells) {
+            c.style.backgroundColor = colorPicker.value;
+        }
+        });
+    }
+
+    row.appendChild(cell);
+    count++;
+    }
+    table.appendChild(row);
+}
+
+function rand(max) {
+    return Math.floor(Math.random() * (max + 1));
+}
