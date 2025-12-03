@@ -1,0 +1,48 @@
+.App {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.task-section {
+  margin-bottom: 60px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.task-section h1 {
+  color: #333;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.style1 {
+  background: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.style2 {
+  background: red;
+  color: lime;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.goods-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .goods-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  .task-section {
+    padding: 15px;
+  }
+}
